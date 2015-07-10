@@ -1,4 +1,4 @@
-      <header class="demo-header mdl-layout__header mdl-color--white mdl-color--grey-300 mdl-color-text--grey-600">
+      <header class="demo-header mdl-layout__header mdl-color--grey-400 mdl-color--grey-200 mdl-color-text--white">
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">Home</span>
           <div class="mdl-layout-spacer"></div>
