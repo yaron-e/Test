@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 @WebServlet("/LoginServlet")
-//@WebServlet("/LoginServlet") 
 public class LoginServlet extends HttpServlet {
  
 	private static final long serialVersionUID = 1L;
@@ -31,7 +30,9 @@ public class LoginServlet extends HttpServlet {
 			session = request.getSession();
 			session.setAttribute("username", username);
 			dispatcher = request.getRequestDispatcher("welcome.jsp");
+			System.out.println("Login success");
 		} else {
+			System.out.println("Login Failed");
 			dispatcher = request.getRequestDispatcher("failure.jsp");
 		}
 		dispatcher.forward(request, response);

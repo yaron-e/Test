@@ -22,12 +22,15 @@ public class LogoutServlet extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
 		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("welcome.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("logout.jsp");
 		dispatcher.forward(request, response);
 		
-		session.invalidate();
 		
+		session.invalidate();
 		System.out.println("Logout Success !!");
+		
 	}
+	
+	
  
 }

@@ -64,6 +64,11 @@
       <main class="mdl-layout__content">
        <br><br>
        
+       <div class="video-container">
+        <iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <br>
+       
        Welcome ${sessionScope['username']} <BR>
 	<form method = "post" action = "Working">
 		<input type = "submit" value = "Go To Working"/>
