@@ -62,13 +62,15 @@
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <%@include file="header.jsp"%>    
       <main class="mdl-layout__content">
+       
+       Working
+       
        <br><br>
-       <form action="LoginServlet" method="post">
- 
-		username :<input type="text" name="username"> <br>
-		password :<input type="password" name="password"><br> <input
-			type="submit" value="Login">
+       <form method = "post" action = "LogoutServlet">
+		<input type = "submit" value = "Go To Working"/>
 	</form>
+       
+       <br><br>
      
         
       </main>

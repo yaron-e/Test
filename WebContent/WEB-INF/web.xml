@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app 
+  version="3.1" 
+  metadata-complete="false"  
+  xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+	
+	
+	<display-name>Test</display-name>
+
+	<servlet>
+		<description></description>
+		<display-name>LoginServlet</display-name>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>web.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description></description>
+		<display-name>LogoutServlet</display-name>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>web.LogoutServlet</servlet-class>
+	</servlet>
+	<listener>
+		<listener-class>web.MySessionListener</listener-class>
+	</listener>
+
+</web-app>
+  
+
+
+
+

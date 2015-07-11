@@ -21,7 +21,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Default</title>
+    <title>Welcome</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -63,12 +63,13 @@
     <%@include file="header.jsp"%>    
       <main class="mdl-layout__content">
        <br><br>
-       <form action="LoginServlet" method="post">
- 
-		username :<input type="text" name="username"> <br>
-		password :<input type="password" name="password"><br> <input
-			type="submit" value="Login">
+       
+       Welcome ${sessionScope['username']} <BR>
+	<form method = "post" action = "Working">
+		<input type = "submit" value = "Go To Working"/>
 	</form>
+	
+	<br><br>
      
         
       </main>
