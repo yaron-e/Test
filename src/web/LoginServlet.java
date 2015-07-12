@@ -26,14 +26,17 @@ public class LoginServlet extends HttpServlet {
 		String password = request.getParameter("password");
 		HttpSession session = null;
 		RequestDispatcher dispatcher = null;
-		if (("admin".equalsIgnoreCase(username) && "1234".equals(password))) {
+		if (("admin".equalsIgnoreCase(username) && "12".equals(password))) {
 			session = request.getSession();
 			session.setAttribute("username", username);
 			dispatcher = request.getRequestDispatcher("welcome.jsp");
 			System.out.println("Login success");
 		} else {
-			System.out.println("Login Failed");
-			dispatcher = request.getRequestDispatcher("failure.jsp");
+			//System.out.println("Login Failed");
+			
+			request.setAttribute("errorMsg", "Wrong username or password");
+			
+			dispatcher = request.getRequestDispatcher("index.jsp");
 		}
 		dispatcher.forward(request, response);
  
